@@ -9,5 +9,6 @@ executable(
 		configuration_inc,
 	],
 	dependencies: [libicecc_dep],
+  install: true,
 )
 

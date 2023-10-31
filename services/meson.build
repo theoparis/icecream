@@ -18,6 +18,7 @@ libicecc = library(
   './ncpus.c',
   include_directories: [inc, configuration_inc],
   dependencies: [lzo2, zstd],
+  install: true,
 )
 
 libicecc_dep = declare_dependency(link_with: libicecc, include_directories: inc)

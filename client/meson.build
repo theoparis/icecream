@@ -12,6 +12,7 @@ icecream_client = library(
 	'./safeguard.cpp',
 	include_directories: [inc, configuration_inc],
 	dependencies: [libicecc_dep],
+  install: true,
 )
 
 icecream_client_dep = declare_dependency(link_with: icecream_client, include_directories: inc)
@@ -21,5 +22,6 @@ executable(
 	'./main.cpp',
 	include_directories: [inc, configuration_inc],
 	dependencies: [libicecc_dep, icecream_client_dep],
+  install: true,
 )
 

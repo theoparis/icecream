@@ -11,5 +11,6 @@ executable(
 	'./file_util.cpp',
 	include_directories: [include_directories('.'), configuration_inc],
 	dependencies: [libicecc_dep, libarchive, libcap],
+  install: true,
 )
 
